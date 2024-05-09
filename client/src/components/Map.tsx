@@ -1,6 +1,4 @@
 import React, { useRef, useEffect } from 'react';
-
-
 import { google } from '@types/googlemaps';
 
 const Map: React.FC = () => {
