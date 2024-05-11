@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "./App.css";
 import "./index.css"
 import WeatherChart from './components/Chart';
+import GeocodeForm from './components/GeocodeForm';
 
 const API_URL = 'https://api.open-meteo.com/v1/gfs'; 
 
@@ -77,6 +78,7 @@ function App() {
   return (
     <div className="App">
       <h1>Weather App</h1>
+      <GeocodeForm/>
       <WeatherChart/>
       <form onSubmit={handleSubmit}>
         <input
